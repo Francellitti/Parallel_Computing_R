@@ -36,6 +36,8 @@ We measured the misclassification error and execution time for each method, noti
 - The SVM with linear kernels had a lower error rate on linear data.
 - Random Forest was more robust for non-linear data.
 
-![}(images/)
+![Comparisons](images/Comparison.png){:width="100"}
 ## 5. Profiling
 Profiling of the SVM tuning process showed a significant reduction in computation time when parallelized. Without parallelization, the tuning process took 6 minutes 50 seconds; with parallelization, this was reduced to 1 minute 17 seconds. The total time for executing all algorithms 1000 times was 10.56 minutes, with Random Forest being the most computationally expensive.
+
+![profiling](images/profvis.png){:width="100"}
